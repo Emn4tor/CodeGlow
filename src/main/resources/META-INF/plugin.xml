@@ -1,0 +1,38 @@
+<idea-plugin>
+  <!-- Unique identifier of the plugin. -->
+  <id>de.emn4tor.CommentGlow</id>
+
+  <!-- Plugin name. -->
+  <name>CommentGlow</name>
+
+  <!-- Vendor information. -->
+  <vendor url="https://www.yourcompany.com">Emn4tor</vendor>
+
+  <!-- Description of the plugin. -->
+  <description><![CDATA[
+        Enter short description for your plugin here.<br>
+        <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <!-- Define plugin dependencies -->
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+
+  <!-- Define plugin compatibility range -->
+  <idea-version since-build="231" />
+
+  <!-- Actions section (for adding menu items, buttons, etc.) -->
+  <actions>
+
+  </actions>
+
+  <!-- Extensions section for defining custom features like syntax highlighters -->
+  <extensions defaultExtensionNs="com.intellij">
+    <annotator language="" implementationClass="de.emn4tor.commentglow.CommentGlow"/>
+
+  </extensions>
+  <application-components>
+
+  </application-components>
+</idea-plugin>
